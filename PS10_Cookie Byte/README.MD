@@ -7,7 +7,8 @@ Problem Statement: Loan Status Prediction
 <a href="https://www.loom.com/share/ef3a11b0d63a42e69bc97126667ad363?sid=8c9c7b5e-6683-4fa7-98a3-e678f3e75abe">Video Pitch</a>
 <br>
 <a href="https://www.kaggle.com/datasets/ninzaami/loan-predication/data">Dataset</a>
-
+<br>
+<a href="https://www.canva.com/design/DAGBa2a6rkM/-Ug21Oalk-7sZJb8Pm5ZeQ/edit?utm_content=DAGBa2a6rkM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">PPT</a>
 <h1>Some Insights</h1>
 <ul>
 Random Forest may have achieved the highest accuracy compared to other models, and how it compares to them:
