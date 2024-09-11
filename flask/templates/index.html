@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Winner Predictor</title>
+    <link href="../static/style.css" rel="stylesheet"a>
+</head>
+<body>
+
+    <h1>IPL Match Winner Predictor</h1>
+
+    <form method="POST">
+        <label for="home_team">Home Team:</label>
+        <input type="text" id="home_team" name="home_team" required><br><br>
+
+
+        <label for="away_team">Away Team:</label>
+        <input type="text" id="away_team" name="away_team" required><br><br>
+
+        <label for="venue_name">Venue:</label>
+        <select id="venue_name" name="venue_name" required>
+             {% for venue in venue_mapping %}
+                <option value="{{ venue }}"> {{ venue }}</option>
+             {% endfor %}
+        </select><br><br>
+
+        <label for="toss_won">Toss Won By:</label>
+        <input type="text" id="toss_won" name="toss_won" required><br><br>
+
+        <label for="decision">Decision (Bat/Field):</label>
+        <input type="text" id="decision" name="decision" required><br><br>
+
+        <label for="nrr">Net Run Rate:</label>
+        <input type="number" step="0.01" id="nrr" name="nrr" required><br><br>
+
+        <input type="submit" value="Predict Winner">
+
+    </form>
+
+    {% if winner %}
+    <h2>The predictor winner is: {{ winner }}</h2>
+    {% endif %}
+</body>
+</html>
